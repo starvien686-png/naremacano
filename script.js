@@ -92,6 +92,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    
+    // --- Cake & Candle Animations ---
+        function animateCakeLayers() {
+        const layers = document.querySelectorAll('.cake-layer, .cake-cream');
+        layers.forEach(layer => {
+            layer.style.animationPlayState = 'running';
+        });
+            
         // Add '2' and '0' text to candles after they drop
     function extinguishCandles() {
         if (!candlesExtinguished) {
@@ -292,4 +300,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 });
+
 
